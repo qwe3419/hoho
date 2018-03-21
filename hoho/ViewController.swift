@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var la1: UILabel!
     var value=0
-    var Nun = 0
+    var nun = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +23,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    @IBAction func bt3(_ sender: UIButton) {
+        if nun==0 {
+            view.backgroundColor=UIColor.yellow
+            nun=1
+            
+        }else{
+            view.backgroundColor=UIColor.blue
+            nun=0
+        }
         
     }
     @IBAction func bt2(_ sender: UIButton) {
